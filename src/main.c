@@ -1,5 +1,6 @@
-#include "find_middle.h"
 #include <stdio.h>
+
+#include "find_middle.h"
 
 int str_length(const char *str) {
   int len = 0;
@@ -9,8 +10,8 @@ int str_length(const char *str) {
   return len;
 }
 
-char *a_str_example = "fredasdjklfajsdkl";
-char *b_str_example = "radasdjkflasjdklf";
+char *a_str_example = "a";
+char *b_str_example = "a";
 
 int main() {
   int N_example = str_length(a_str_example);
@@ -19,7 +20,9 @@ int main() {
   int N = N_example;
   int M = M_example;
 
-  int D = find_middle(a_str_example, N, b_str_example, M);
+  // printf("d, D, k, x, y\n");
+  snake middle = find_middle(a_str_example, N, b_str_example, M);
 
-  printf("Edit distance: %i\n", D);
+  printf("middle snake %i, %i, %i, %i\n", middle.x, middle.y, middle.u,
+         middle.v);
 }
