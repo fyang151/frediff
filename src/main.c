@@ -10,8 +10,8 @@ int str_length(const char *str) {
   return len;
 }
 
-char *a_str_example = "a";
-char *b_str_example = "a";
+char *a_str_example = "fred";
+char *b_str_example = "rad";
 
 int main() {
   int N_example = str_length(a_str_example);
@@ -21,8 +21,7 @@ int main() {
   int M = M_example;
 
   // printf("d, D, k, x, y\n");
-  snake middle = find_middle(a_str_example, N, b_str_example, M);
+  int D = find_middle(a_str_example, N, b_str_example, M);
 
-  printf("middle snake %i, %i, %i, %i\n", middle.x, middle.y, middle.u,
-         middle.v);
+  printf("EDIT DISTANCE %i\n", D);
 }

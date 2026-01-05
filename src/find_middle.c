@@ -10,7 +10,7 @@
 
 // lemmas reference the original paper, proof wont be shown here
 
-snake find_middle(const char *a_str, int N, const char *b_str, int M) {
+int find_middle(const char *a_str, int N, const char *b_str, int M) {
   int MAX = N + M;
   int delta = N - M;
 
@@ -18,8 +18,6 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
 
   int *V = malloc((2 * MAX + 1) * sizeof(int));
   int *V_r = malloc((2 * MAX + 1) * sizeof(int));
-
-  snake snake = {-1, -1, -1, -1};
 
   for (int D = 0; D <= MAX; D++) {
     // lemma 1: snakes after D edits must end up on diagonals k in {-D, -D+2,
@@ -30,34 +28,19 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
       // initial case
       if (D == 0) {
         x = 0;
-
-        snake.x = x;
-        snake.y = 0;
         // snake can only come from above (deletion)
       } else if (k == -D) {
         x = V[k_adj + 1];
-
-        snake.x = x;
-        snake.y = x - k - 1;
         // snake can only come from left (insertion)
       } else if (k == D) {
         x = V[k_adj - 1] + 1;
-
-        snake.x = x - 1;
-        snake.y = x - k;
         // otherwise, snake comes from previous diagonal k with higher x
       } else if (V[k_adj - 1] < V[k_adj + 1]) {
         // snake comes from above (deletion)
         x = V[k_adj + 1];
-
-        snake.x = x;
-        snake.y = x - k - 1;
       } else {
         // snake comes from left (insertion)
         x = V[k_adj - 1] + 1;
-
-        snake.x = x - 1;
-        snake.y = x - k;
       }
 
       y = x - k;
@@ -70,17 +53,13 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
       }
 
       V[k_adj] = x;
-      // printf("f: %i, %i, %i, %i\n", D, k, x, y);
-      printf("F, x: %i, y: %i, u: %i, v: %i\n", snake.x, snake.y, x, y);
+      printf("f: %i, %i, %i, %i\n", D, k, x, y);
 
       if (x == N && y == M) {
         free(V);
         free(V_r);
 
-        snake.u = x;
-        snake.v = y;
-
-        return snake;
+        return 2 * D + 1;
       }
 
       // first check if delta is odd because:
@@ -97,10 +76,7 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
           free(V);
           free(V_r);
 
-          snake.u = x;
-          snake.v = y;
-
-          return snake;
+          return D;
         }
       }
     }
@@ -113,34 +89,19 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
       // initial case
       if (D == 0) {
         x_r = N;
-
-        snake.u = x_r;
-        snake.v = N;
         // snake must come from right (insertion)
       } else if (k == -D) {
         x_r = V_r[k_adj + 1] - 1;
-
-        snake.u = x_r + 1;
-        snake.v = x_r - k - delta;
         // snake must come from below (deletion)
       } else if (k == D) {
         x_r = V_r[k_adj - 1];
-
-        snake.u = x_r;
-        snake.v = x_r - k - delta + 1;
         // otherwise, snake comes from previous diagonal k with lower x
       } else if (V_r[k_adj + 1] < V_r[k_adj - 1]) {
         // snake comes from right (insertion)
         x_r = V_r[k_adj + 1] - 1;
-
-        snake.u = x_r + 1;
-        snake.v = x_r - k - delta;
       } else {
         // snake come from below (deletion)
         x_r = V_r[k_adj - 1];
-
-        snake.u = x_r;
-        snake.v = x_r - k - delta + 1;
       }
 
       y_r = x_r - k - delta;
@@ -151,16 +112,13 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
       }
 
       V_r[k_adj] = x_r;
-      // printf("r: %i, %i, %i, %i\n", D, k + delta, x_r, y_r);
-      printf("R, x: %i, y: %i, u: %i, v: %i\n", x_r, y_r, snake.u, snake.v);
+      printf("r: %i, %i, %i, %i\n", D, k + delta, x_r, y_r);
 
       if (x_r == 0 && y_r == 0) {
         free(V);
         free(V_r);
 
-        snake.x = x_r;
-        snake.y = y_r;
-        return snake;
+        return D;
       }
 
       if (delta % 2 == 0 && k + delta >= -D && k + delta <= D) {
@@ -169,9 +127,7 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
           free(V);
           free(V_r);
 
-          snake.x = x_r;
-          snake.y = y_r;
-          return snake;
+          return 2 * D;
         }
       }
     }
@@ -179,5 +135,5 @@ snake find_middle(const char *a_str, int N, const char *b_str, int M) {
 
   free(V);
   free(V_r);
-  return snake;
+  return -1;
 }
