@@ -8,7 +8,7 @@
 
 // lemmas reference the original paper, proof wont be shown here
 
-int diff(const char *a_str, int N, const char *b_str, int M) {
+int find_middle(const char *a_str, int N, const char *b_str, int M) {
   int MAX = N + M;
   int delta = N - M;
 

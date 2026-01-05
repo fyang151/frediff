@@ -1,1 +1,0 @@
-int diff(const char *a_str, int N, const char *b_str, int M);
