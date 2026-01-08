@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 #include "find_middle.h"
@@ -10,14 +9,13 @@
 
 // lemmas reference the original paper, proof wont be shown here
 
-int find_middle(const char *a_str, int N, const char *b_str, int M) {
+struct snake find_middle(const char *a_str, int N, const char *b_str, int M) {
   int MAX = N + M;
   int delta = N - M;
 
   // u, v are x, y in reverse direction
   int x, y, u, v;
-
-  int snake_x, snake_y, snake_u, snake_v;
+  snake snake = {-1, -1, -1, -1};
 
   int *V = malloc((2 * MAX + 1) * sizeof(int));
   int *V_r = malloc((2 * MAX + 1) * sizeof(int));
@@ -54,14 +52,14 @@ int find_middle(const char *a_str, int N, const char *b_str, int M) {
       // freely traverse down same letters (snake), we only care about edits
       // think about it as the hungry snake eats all the same chars :)
       while (x < N && y < M && a_str[x] == b_str[y]) {
-        snake_x = start_x;
-        snake_y = start_y;
+        snake.x = start_x;
+        snake.y = start_y;
 
         x++;
         y++;
 
-        snake_u = x;
-        snake_v = y;
+        snake.u = x;
+        snake.v = y;
       }
 
       V[k_adj] = x;
@@ -79,7 +77,7 @@ int find_middle(const char *a_str, int N, const char *b_str, int M) {
           free(V);
           free(V_r);
 
-          return D;
+          return snake;
         }
       }
 
@@ -87,7 +85,7 @@ int find_middle(const char *a_str, int N, const char *b_str, int M) {
         free(V);
         free(V_r);
 
-        return 2 * D + 1;
+        return snake;
       }
     }
 
@@ -120,26 +118,24 @@ int find_middle(const char *a_str, int N, const char *b_str, int M) {
       int start_y = v;
 
       while (u > 0 && v > 0 && a_str[u - 1] == b_str[v - 1]) {
-        snake_u = start_x;
-        snake_v = start_y;
+        snake.u = start_x;
+        snake.v = start_y;
 
         u--;
         v--;
 
-        snake_x = u;
-        snake_y = v;
+        snake.x = u;
+        snake.y = v;
       }
 
       V_r[k_adj] = u;
 
       if (delta % 2 == 0 && k + delta >= -D && k + delta <= D) {
         if (V[k_adj + delta] >= u) {
-          printf("found middle snake: %i, %i, %i, %i\n", snake_x, snake_y,
-                 snake_u, snake_v);
           free(V);
           free(V_r);
 
-          return 2 * D;
+          return snake;
         }
       }
 
@@ -147,12 +143,12 @@ int find_middle(const char *a_str, int N, const char *b_str, int M) {
         free(V);
         free(V_r);
 
-        return D;
+        return snake;
       }
     }
   }
 
   free(V);
   free(V_r);
-  return -1;
+  return snake;
 }
