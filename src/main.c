@@ -10,8 +10,8 @@ int str_length(const char *str) {
   return len;
 }
 
-char *a_str_example = "fred";
-char *b_str_example = "rad";
+char *a_str_example = "asdf";
+char *b_str_example = "zxdv";
 
 int main() {
   int N_example = str_length(a_str_example);
