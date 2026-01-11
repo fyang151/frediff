@@ -2,7 +2,6 @@ import createModule from "./diff.js";
 
 const toCString = (str) => {
   const len = Module.lengthBytesUTF8(str) + 1;
-  console.log(len);
   const ptr = Module._malloc(len);
   Module.stringToUTF8(str, ptr, len);
   return ptr;
