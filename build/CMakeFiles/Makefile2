@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/fyang151/cdiff/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/diff.dir/all
+all: CMakeFiles/log.dir/all
 all: vendor/cjson/all
 .PHONY : all
 
@@ -72,7 +72,7 @@ preinstall: vendor/cjson/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/diff.dir/clean
+clean: CMakeFiles/log.dir/clean
 clean: vendor/cjson/clean
 .PHONY : clean
 
@@ -167,30 +167,30 @@ vendor/cjson/tests/clean: vendor/cjson/tests/CMakeFiles/minify_tests.dir/clean
 .PHONY : vendor/cjson/tests/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/diff.dir
+# Target rules for target CMakeFiles/log.dir
 
 # All Build rule for target.
-CMakeFiles/diff.dir/all: vendor/cjson/CMakeFiles/cjson.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fyang151/cdiff/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target diff"
-.PHONY : CMakeFiles/diff.dir/all
+CMakeFiles/log.dir/all: vendor/cjson/CMakeFiles/cjson.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fyang151/cdiff/build/CMakeFiles --progress-num=12,13,14,15,16 "Built target log"
+.PHONY : CMakeFiles/log.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/diff.dir/rule: cmake_check_build_system
+CMakeFiles/log.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fyang151/cdiff/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/diff.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/log.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fyang151/cdiff/build/CMakeFiles 0
-.PHONY : CMakeFiles/diff.dir/rule
+.PHONY : CMakeFiles/log.dir/rule
 
 # Convenience name for target.
-diff: CMakeFiles/diff.dir/rule
-.PHONY : diff
+log: CMakeFiles/log.dir/rule
+.PHONY : log
 
 # clean rule for target.
-CMakeFiles/diff.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/clean
-.PHONY : CMakeFiles/diff.dir/clean
+CMakeFiles/log.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/clean
+.PHONY : CMakeFiles/log.dir/clean
 
 #=============================================================================
 # Target rules for target vendor/cjson/CMakeFiles/cjson.dir
@@ -249,6 +249,11 @@ vendor/cjson/CMakeFiles/cJSON_test.dir/clean:
 
 # All Build rule for target.
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/CMakeFiles/cJSON_test.dir/all
+vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_examples.dir/all
+vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_number.dir/all
+vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_hex4.dir/all
+vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_string.dir/all
+vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_array.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_object.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_value.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/print_string.dir/all
@@ -256,11 +261,6 @@ vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/print_numbe
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/print_array.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/print_object.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/print_value.dir/all
-vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_examples.dir/all
-vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_number.dir/all
-vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_hex4.dir/all
-vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_string.dir/all
-vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_array.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/misc_tests.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/parse_with_opts.dir/all
 vendor/cjson/CMakeFiles/check.dir/all: vendor/cjson/tests/CMakeFiles/compare_tests.dir/all
@@ -833,7 +833,7 @@ vendor/cjson/tests/CMakeFiles/minify_tests.dir/clean:
 vendor/cjson/fuzzing/CMakeFiles/fuzz_main.dir/all: vendor/cjson/CMakeFiles/cjson.dir/all
 	$(MAKE) $(MAKESILENT) -f vendor/cjson/fuzzing/CMakeFiles/fuzz_main.dir/build.make vendor/cjson/fuzzing/CMakeFiles/fuzz_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendor/cjson/fuzzing/CMakeFiles/fuzz_main.dir/build.make vendor/cjson/fuzzing/CMakeFiles/fuzz_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fyang151/cdiff/build/CMakeFiles --progress-num=14,15,16 "Built target fuzz_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fyang151/cdiff/build/CMakeFiles --progress-num=9,10,11 "Built target fuzz_main"
 .PHONY : vendor/cjson/fuzzing/CMakeFiles/fuzz_main.dir/all
 
 # Build rule for subdir invocation for target.

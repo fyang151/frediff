@@ -1,22 +1,22 @@
 [
 {
   "directory": "/home/fyang151/cdiff/build",
-  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/diff.dir/src/main.c.o -c /home/fyang151/cdiff/src/main.c",
-  "file": "/home/fyang151/cdiff/src/main.c"
+  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/log.dir/src/log.c.o -c /home/fyang151/cdiff/src/log.c",
+  "file": "/home/fyang151/cdiff/src/log.c"
 },
 {
   "directory": "/home/fyang151/cdiff/build",
-  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/diff.dir/src/diff.c.o -c /home/fyang151/cdiff/src/diff.c",
+  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/log.dir/src/diff.c.o -c /home/fyang151/cdiff/src/diff.c",
   "file": "/home/fyang151/cdiff/src/diff.c"
 },
 {
   "directory": "/home/fyang151/cdiff/build",
-  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/diff.dir/src/ses.c.o -c /home/fyang151/cdiff/src/ses.c",
+  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/log.dir/src/ses.c.o -c /home/fyang151/cdiff/src/ses.c",
   "file": "/home/fyang151/cdiff/src/ses.c"
 },
 {
   "directory": "/home/fyang151/cdiff/build",
-  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/diff.dir/src/find_middle.c.o -c /home/fyang151/cdiff/src/find_middle.c",
+  "command": "/usr/bin/cc  -I/home/fyang151/cdiff/vendor/cjson  -o CMakeFiles/log.dir/src/find_middle.c.o -c /home/fyang151/cdiff/src/find_middle.c",
   "file": "/home/fyang151/cdiff/src/find_middle.c"
 },
 {
@@ -33,6 +33,31 @@
   "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
   "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -Wno-error -fvisibility=default -Wno-switch-enum -o CMakeFiles/unity.dir/unity/src/unity.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/unity/src/unity.c",
   "file": "/home/fyang151/cdiff/vendor/cjson/tests/unity/src/unity.c"
+},
+{
+  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_examples.dir/parse_examples.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_examples.c",
+  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_examples.c"
+},
+{
+  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_number.dir/parse_number.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_number.c",
+  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_number.c"
+},
+{
+  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_hex4.dir/parse_hex4.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_hex4.c",
+  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_hex4.c"
+},
+{
+  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_string.dir/parse_string.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_string.c",
+  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_string.c"
+},
+{
+  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
+  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_array.dir/parse_array.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_array.c",
+  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_array.c"
 },
 {
   "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
@@ -68,31 +93,6 @@
   "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
   "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/print_value.dir/print_value.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/print_value.c",
   "file": "/home/fyang151/cdiff/vendor/cjson/tests/print_value.c"
-},
-{
-  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
-  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_examples.dir/parse_examples.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_examples.c",
-  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_examples.c"
-},
-{
-  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
-  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_number.dir/parse_number.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_number.c",
-  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_number.c"
-},
-{
-  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
-  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_hex4.dir/parse_hex4.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_hex4.c",
-  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_hex4.c"
-},
-{
-  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
-  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_string.dir/parse_string.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_string.c",
-  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_string.c"
-},
-{
-  "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",
-  "command": "/usr/bin/cc -DCJSON_API_VISIBILITY -DCJSON_EXPORT_SYMBOLS -DENABLE_LOCALES   -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum -fvisibility=hidden -o CMakeFiles/parse_array.dir/parse_array.c.o -c /home/fyang151/cdiff/vendor/cjson/tests/parse_array.c",
-  "file": "/home/fyang151/cdiff/vendor/cjson/tests/parse_array.c"
 },
 {
   "directory": "/home/fyang151/cdiff/build/vendor/cjson/tests",

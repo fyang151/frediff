@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named diff
+# Target rules for targets named log
 
 # Build rule for target.
-diff: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 diff
-.PHONY : diff
+log: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 log
+.PHONY : log
 
 # fast build rule for target.
-diff/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/build
-.PHONY : diff/fast
+log/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
+.PHONY : log/fast
 
 #=============================================================================
 # Target rules for targets named cjson
@@ -491,7 +491,7 @@ src/diff.o: src/diff.c.o
 
 # target to build an object file
 src/diff.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/diff.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/diff.c.o
 .PHONY : src/diff.c.o
 
 src/diff.i: src/diff.c.i
@@ -499,7 +499,7 @@ src/diff.i: src/diff.c.i
 
 # target to preprocess a source file
 src/diff.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/diff.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/diff.c.i
 .PHONY : src/diff.c.i
 
 src/diff.s: src/diff.c.s
@@ -507,7 +507,7 @@ src/diff.s: src/diff.c.s
 
 # target to generate assembly for a file
 src/diff.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/diff.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/diff.c.s
 .PHONY : src/diff.c.s
 
 src/find_middle.o: src/find_middle.c.o
@@ -515,7 +515,7 @@ src/find_middle.o: src/find_middle.c.o
 
 # target to build an object file
 src/find_middle.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/find_middle.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/find_middle.c.o
 .PHONY : src/find_middle.c.o
 
 src/find_middle.i: src/find_middle.c.i
@@ -523,7 +523,7 @@ src/find_middle.i: src/find_middle.c.i
 
 # target to preprocess a source file
 src/find_middle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/find_middle.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/find_middle.c.i
 .PHONY : src/find_middle.c.i
 
 src/find_middle.s: src/find_middle.c.s
@@ -531,39 +531,39 @@ src/find_middle.s: src/find_middle.c.s
 
 # target to generate assembly for a file
 src/find_middle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/find_middle.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/find_middle.c.s
 .PHONY : src/find_middle.c.s
 
-src/main.o: src/main.c.o
-.PHONY : src/main.o
+src/log.o: src/log.c.o
+.PHONY : src/log.o
 
 # target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/main.c.o
-.PHONY : src/main.c.o
+src/log.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/log.c.o
+.PHONY : src/log.c.o
 
-src/main.i: src/main.c.i
-.PHONY : src/main.i
+src/log.i: src/log.c.i
+.PHONY : src/log.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/log.c.i
+.PHONY : src/log.c.i
 
-src/main.s: src/main.c.s
-.PHONY : src/main.s
+src/log.s: src/log.c.s
+.PHONY : src/log.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/log.c.s
+.PHONY : src/log.c.s
 
 src/ses.o: src/ses.c.o
 .PHONY : src/ses.o
 
 # target to build an object file
 src/ses.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/ses.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/ses.c.o
 .PHONY : src/ses.c.o
 
 src/ses.i: src/ses.c.i
@@ -571,7 +571,7 @@ src/ses.i: src/ses.c.i
 
 # target to preprocess a source file
 src/ses.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/ses.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/ses.c.i
 .PHONY : src/ses.c.i
 
 src/ses.s: src/ses.c.s
@@ -579,7 +579,7 @@ src/ses.s: src/ses.c.s
 
 # target to generate assembly for a file
 src/ses.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/diff.dir/build.make CMakeFiles/diff.dir/src/ses.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/src/ses.c.s
 .PHONY : src/ses.c.s
 
 # Help Target
@@ -600,8 +600,8 @@ help:
 	@echo "... cjson"
 	@echo "... cjson_add"
 	@echo "... compare_tests"
-	@echo "... diff"
 	@echo "... fuzz_main"
+	@echo "... log"
 	@echo "... minify_tests"
 	@echo "... misc_tests"
 	@echo "... parse_array"
@@ -625,9 +625,9 @@ help:
 	@echo "... src/find_middle.o"
 	@echo "... src/find_middle.i"
 	@echo "... src/find_middle.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/log.o"
+	@echo "... src/log.i"
+	@echo "... src/log.s"
 	@echo "... src/ses.o"
 	@echo "... src/ses.i"
 	@echo "... src/ses.s"

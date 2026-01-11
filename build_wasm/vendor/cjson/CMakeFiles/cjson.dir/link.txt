@@ -1,0 +1,2 @@
+/home/fyang151/emsdk/upstream/emscripten/emar qc libcjson.a CMakeFiles/cjson.dir/cJSON.c.o
+/home/fyang151/emsdk/upstream/emscripten/emranlib libcjson.a

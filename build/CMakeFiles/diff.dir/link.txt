@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/diff.dir/src/main.c.o CMakeFiles/diff.dir/src/diff.c.o CMakeFiles/diff.dir/src/ses.c.o CMakeFiles/diff.dir/src/find_middle.c.o -o diff  -Wl,-rpath,/home/fyang151/cdiff/build/vendor/cjson vendor/cjson/libcjson.so.1.7.19 -lm 

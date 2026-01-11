@@ -1,15 +1,15 @@
 Performing C SOURCE FILE Test FLAG_SUPPORTED_Wcomma failed with the following output:
 Change Dir: /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_721c6/fast && gmake[1]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake  -f CMakeFiles/cmTC_721c6.dir/build.make CMakeFiles/cmTC_721c6.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1947e/fast && gmake[1]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1947e.dir/build.make CMakeFiles/cmTC_1947e.dir/build
 gmake[2]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_721c6.dir/src.c.o
-/usr/bin/cc -DFLAG_SUPPORTED_Wcomma  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong    -Wcomma -o CMakeFiles/cmTC_721c6.dir/src.c.o -c /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_1947e.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wcomma  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong    -Wcomma -o CMakeFiles/cmTC_1947e.dir/src.c.o -c /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command-line option '-Wcomma'; did you mean '-Wcomment'?
-gmake[2]: *** [CMakeFiles/cmTC_721c6.dir/build.make:78: CMakeFiles/cmTC_721c6.dir/src.c.o] Error 1
+gmake[2]: *** [CMakeFiles/cmTC_1947e.dir/build.make:78: CMakeFiles/cmTC_1947e.dir/src.c.o] Error 1
 gmake[2]: Leaving directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-gmake[1]: *** [Makefile:127: cmTC_721c6/fast] Error 2
+gmake[1]: *** [Makefile:127: cmTC_1947e/fast] Error 2
 gmake[1]: Leaving directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
 
 
@@ -18,15 +18,15 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test FLAG_SUPPORTED_Wmissingvariabledeclarations failed with the following output:
 Change Dir: /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_af715/fast && gmake[1]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake  -f CMakeFiles/cmTC_af715.dir/build.make CMakeFiles/cmTC_af715.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cca4b/fast && gmake[1]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_cca4b.dir/build.make CMakeFiles/cmTC_cca4b.dir/build
 gmake[2]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_af715.dir/src.c.o
-/usr/bin/cc -DFLAG_SUPPORTED_Wmissingvariabledeclarations  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wmissing-variable-declarations -o CMakeFiles/cmTC_af715.dir/src.c.o -c /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_cca4b.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wmissingvariabledeclarations  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wmissing-variable-declarations -o CMakeFiles/cmTC_cca4b.dir/src.c.o -c /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command-line option '-Wmissing-variable-declarations'; did you mean '-Wmissing-declarations'?
-gmake[2]: *** [CMakeFiles/cmTC_af715.dir/build.make:78: CMakeFiles/cmTC_af715.dir/src.c.o] Error 1
+gmake[2]: *** [CMakeFiles/cmTC_cca4b.dir/build.make:78: CMakeFiles/cmTC_cca4b.dir/src.c.o] Error 1
 gmake[2]: Leaving directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-gmake[1]: *** [Makefile:127: cmTC_af715/fast] Error 2
+gmake[1]: *** [Makefile:127: cmTC_cca4b/fast] Error 2
 gmake[1]: Leaving directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
 
 
@@ -35,15 +35,15 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test FLAG_SUPPORTED_Wusedbutmarkedunused failed with the following output:
 Change Dir: /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_510e6/fast && gmake[1]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake  -f CMakeFiles/cmTC_510e6.dir/build.make CMakeFiles/cmTC_510e6.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14e78/fast && gmake[1]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_14e78.dir/build.make CMakeFiles/cmTC_14e78.dir/build
 gmake[2]: Entering directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_510e6.dir/src.c.o
-/usr/bin/cc -DFLAG_SUPPORTED_Wusedbutmarkedunused  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wused-but-marked-unused -o CMakeFiles/cmTC_510e6.dir/src.c.o -c /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_14e78.dir/src.c.o
+/usr/bin/cc -DFLAG_SUPPORTED_Wusedbutmarkedunused  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wused-but-marked-unused -o CMakeFiles/cmTC_14e78.dir/src.c.o -c /home/fyang151/cdiff/build/CMakeFiles/CMakeTmp/src.c
 cc: error: unrecognized command-line option '-Wused-but-marked-unused'
-gmake[2]: *** [CMakeFiles/cmTC_510e6.dir/build.make:78: CMakeFiles/cmTC_510e6.dir/src.c.o] Error 1
+gmake[2]: *** [CMakeFiles/cmTC_14e78.dir/build.make:78: CMakeFiles/cmTC_14e78.dir/src.c.o] Error 1
 gmake[2]: Leaving directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
-gmake[1]: *** [Makefile:127: cmTC_510e6/fast] Error 2
+gmake[1]: *** [Makefile:127: cmTC_14e78/fast] Error 2
 gmake[1]: Leaving directory '/home/fyang151/cdiff/build/CMakeFiles/CMakeTmp'
 
 

@@ -1,0 +1,1 @@
+/home/fyang151/emsdk/upstream/emscripten/emcc -s WASM=1 -s MODULARIZE=1 -s EXPORT_NAME='DiffModule' -s EXPORTED_FUNCTIONS='["_diff","_ses","_find_middle"]' -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]' @CMakeFiles/diff_wasm.dir/objects1.rsp -o diff_wasm.js @CMakeFiles/diff_wasm.dir/linklibs.rsp

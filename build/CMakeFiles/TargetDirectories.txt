@@ -1,4 +1,4 @@
-/home/fyang151/cdiff/build/CMakeFiles/diff.dir
+/home/fyang151/cdiff/build/CMakeFiles/log.dir
 /home/fyang151/cdiff/build/CMakeFiles/edit_cache.dir
 /home/fyang151/cdiff/build/CMakeFiles/rebuild_cache.dir
 /home/fyang151/cdiff/build/CMakeFiles/list_install_components.dir

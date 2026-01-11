@@ -1,0 +1,1 @@
+/home/fyang151/emsdk/upstream/emscripten/emcc @CMakeFiles/log.dir/objects1.rsp -o log.js @CMakeFiles/log.dir/linklibs.rsp
