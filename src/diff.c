@@ -1,13 +1,13 @@
-#include "cJSON.h"
 #include "ses.h"
+#include <stdlib.h>
 
-char *diff(const char *A, const char *B, int N, int M) {
-  cJSON *output = cJSON_CreateArray();
-  ses(A, B, 0, 0, N, M, output);
-  char *s = cJSON_Print(output);
+int *diff(const char *A, const char *B, int N, int M) {
+  // result buffer format is [result_len, diff_type, len, diff_type, len, .....]
+  int *result = malloc((N + M) * 2 * sizeof(int));
+  int result_len = 0;
 
-  char *json = cJSON_PrintUnformatted(output);
+  ses(A, B, 0, 0, N, M, result + 1, &result_len);
 
-  cJSON_Delete(output);
-  return json;
+  result[0] = result_len;
+  return result;
 }

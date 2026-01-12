@@ -2,8 +2,6 @@
 
 #include "find_middle.h"
 
-#include <stdio.h>
-
 // D (wavefront): the farthest x for each path after D edits
 // V: the array we use to store D, value x indexed by diagonals k
 // k (diagonal): well... its a diagonal
@@ -68,8 +66,6 @@ snake find_middle(const char *a_str, const char *b_str, int N_start,
       }
 
       V[k_adj] = x;
-
-      // printf("from f: %i, %i\n", x, y);
 
       // first check if delta_r is odd because:
       // lemma 1: the optimal path is odd or even as delta_r is odd or even
@@ -136,8 +132,6 @@ snake find_middle(const char *a_str, const char *b_str, int N_start,
       }
 
       V_r[k_adj] = u;
-
-      // printf("from r: %i, %i\n", u, v);
 
       if (delta_r % 2 == 0 && k + delta_r >= -D && k + delta_r <= D) {
         if (V[k_adj + delta_r] >= u) {

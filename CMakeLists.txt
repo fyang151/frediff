@@ -6,8 +6,6 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
-add_subdirectory(vendor/cjson)
-
 if(NOT EMSCRIPTEN)
     add_executable(log
         src/log.c
@@ -15,9 +13,6 @@ if(NOT EMSCRIPTEN)
         src/ses.c
         src/find_middle.c
     )
-
-    target_link_libraries(log PRIVATE cjson)
-    target_include_directories(log PRIVATE vendor/cjson)
 endif()
 
 if(EMSCRIPTEN)
@@ -26,9 +21,6 @@ if(EMSCRIPTEN)
         src/ses.c
         src/find_middle.c
     )
-
-    target_link_libraries(diff_wasm PRIVATE cjson)
-    target_include_directories(diff_wasm PRIVATE vendor/cjson)
 
     set_target_properties(diff_wasm PROPERTIES
         OUTPUT_NAME "diff"

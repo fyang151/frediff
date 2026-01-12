@@ -1,1 +1,1 @@
-char *diff(char *A, char *B, int N, int M);
+int *diff(char *A, char *B, int N, int M);
