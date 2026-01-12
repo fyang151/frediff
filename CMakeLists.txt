@@ -32,6 +32,6 @@ if(EMSCRIPTEN)
         "-sEXPORT_ES6=1"
         "-sENVIRONMENT=web"
         "-sEXPORTED_FUNCTIONS=['_diff','_malloc','_free']"
-        "-sEXPORTED_RUNTIME_METHODS=['UTF8ToString','stringToUTF8','lengthBytesUTF8']"
+        "-sEXPORTED_RUNTIME_METHODS=['stringToUTF8','lengthBytesUTF8','HEAP32']"
     )
 endif()
