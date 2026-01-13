@@ -1,4 +1,4 @@
-import { diff } from "../dist/index.js";
+import { diff } from "./dist/index.js";
 
 self.postMessage({ ready: true });
 
